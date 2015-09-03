@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>SALT - Salary Approximation Litmus Test</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		
+		<script src="numeral.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div id="description">
+			Enter your salary (or total compensation, or net worth or whatever) below and see how you stack up!
+			If you don't see your area of employment on the list, pick the one that fits best or choose "other".
+			<br><br>
+			New employment areas coming soon!
+		</div>
+		<br>
+		<div id="form">
+			<form action="" onsubmit="return compute()" id="form">
+				Salary: <input type="number" id="in"><br>
+				Employment Area:
+				<select name="areas">
+					<option value="01">Infrastructure</option>
+					<option value="02">Desktop Support</option>
+					<option value="03">Networking/VOIP</option>
+					<option value="04">Hardware Design</option>
+					<option value="05">Software Design</option>
+					<option value="06">UI/UX Design</option>
+					<option value="07">Frontend Application Development</option>
+					<option value="08">Databases</option>
+					<option value="09">Search Engine Optimization</option>
+					<option value="10">Open Source Software</option>
+				</select><br>
+				<input type="submit" value="Rank Me!">
+			</form>
+		</div>
+		<br>
+		<div id="container">
+			<div id="ranks"></div>
+			<div id="result"></div>
+			<div id="endtext"></div>
+		</div>
+	</body>
+</html>
